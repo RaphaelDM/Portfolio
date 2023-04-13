@@ -161,6 +161,7 @@ h1 {
   overflow: hidden;
   position: relative;
   border: #ffcc00 2px solid;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .slider-container {
