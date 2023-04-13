@@ -162,6 +162,7 @@ h1 {
   position: relative;
   border: #ffcc00 2px solid;
   border-radius: 10px 10px 10px 10px;
+  height: 300px;
 }
 
 .slider-container {
