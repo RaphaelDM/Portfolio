@@ -1,0 +1,429 @@
+/* Page d'ouverture */
+
+
+
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: aquamarine;
+  opacity: 1 !important; 
+}
+
+h1 {
+  font-size: 2.5rem;
+  opacity: 1 !important; 
+}
+
+h2 {
+  font-size: 2rem;
+  opacity: 1 !important; 
+}
+
+h3 {
+  font-size: 1.5rem;
+  opacity: 1 !important; 
+}
+
+/* Header Section */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Section Présentation */
+#presentation {
+  padding: 100px 0;
+  text-align: center;
+}
+
+#presentation h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  opacity: 1 !important;
+}
+
+#presentation p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 1 !important;
+}
+
+/* Projets Section */
+#projets {
+  background-color: transparent;
+  padding: 50px 0;
+}
+
+#projets .card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projets .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#projets .card-body {
+  padding: 15px;
+}
+
+#projets .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 10px 0;
+  opacity: 1 !important;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* AOS Animations Customization */
+[data-aos] {
+  opacity: 1;
+}
+
+[data-aos="fade-up"] {
+  animation-name: fade-up;
+  animation-duration: 1s;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style personnalisé pour la navbar */
+.navbar {
+  position: fixed; /* Rend la navbar fixe */
+  top: 0; /* La fixe en haut de la page */
+  left: 0;
+  width: 100%; /* Assure que la navbar occupe toute la largeur */
+  z-index: 1000; /* Assure que la navbar est au-dessus des autres éléments */
+  background-color: #343a40; /* Couleur de fond de la navbar */
+}
+
+.navbar-nav {
+  display: flex; /* Utilisation du Flexbox pour aligner les items horizontalement */
+  justify-content: flex-end; /* Aligne les items vers la droite */
+  align-items: center; /* Aligne verticalement les items au centre */
+}
+
+.nav-item {
+  margin-left: 20px; /* Espacement entre les items de la navbar */
+}
+
+.navbar-brand {
+  color: #fff; /* Couleur du texte de la marque */
+  font-size: 1.5rem; /* Taille de police */
+}
+
+.nav-link {
+  color: #fff; /* Couleur du texte des liens */
+  font-size: 1rem; /* Taille de police */
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ff6347; /* Changement de couleur au survol */
+}
+
+/* Pour le menu responsive (version mobile) */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end; /* Aligne le menu à droite quand il est déroulé */
+}
+
+.project-img {
+  opacity: 1 !important; /* Assure que l'image reste visible */
+  transition: none; /* Évite tout effet CSS conflictuel */
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Redimensionne la vidéo pour couvrir tout l'écran */
+  z-index: -1; /* Place la vidéo en arrière-plan */
+  opacity: 0.5; /* Ajuste l’opacité si tu veux un effet légèrement transparent */
+}
+
+body {
+  position: relative;
+  z-index: 1; /* Assure que le contenu est au-dessus de la vidéo */
+  background-color: #000; /* Couleur de fond en cas d'échec de chargement de la vidéo */
+}
+
+/* Section Formation */
+#formation {
+  background-color:transparent; /* Fond clair */
+  padding: 50px 0;
+  margin-top: 80px; /* Ajout de marge en haut pour le séparer de la navbar */
+  border-radius: 15px; /* Bordure arrondie pour la section */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ajout d'une légère ombre pour plus d'effet */
+}
+
+/* Pour les éléments individuels dans la formation */
+.formation-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px; /* Bordure arrondie pour chaque item */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formation-item .formation-icon {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.formation-item .formation-icon img {
+  width: 80px; /* Taille de l'icône */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%; /* Bordure arrondie pour les images */
+}
+
+.formation-item .formation-info {
+  flex-grow: 1;
+}
+
+.formation-title {
+  font-size: 1.5rem;
+  color: #343a40;
+  font-weight: bold;
+}
+
+.formation-item p {
+  color: #6c757d;
+  font-size: 1rem;
+  opacity: 1 !important;
+}
+
+.formation-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.formation-item:hover .formation-title {
+  color: #007bff; /* Changer la couleur du titre au survol */
+}
+
+/* Section Compétences */
+#competences {
+  padding: 50px 0;
+  background-color: transparent;
+}
+
+#competences .card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#competences .card img {
+  width: 100px; /* Augmenter la taille de l'image */
+  height: 100px; /* Maintenir la proportion pour que l'image soit carrée */
+  object-fit: cover; /* Pour que l'image couvre bien son conteneur */
+  border-radius: 50%; /* Pour rendre les images rondes */
+}
+
+#competences .card-title {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#competences .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Compétences */
+#competences {
+  padding: 50px 0;
+  background-color: transparent;
+}
+
+.skill-card {
+  background-color: transparent; /* Rendre le fond transparent */
+  /* border: 2px solid rgba(0, 0, 0, 0.1); /* Bordure légère */
+  /*border-radius: 15px; Coins arrondis */
+  padding: 15px;
+  text-align: center;
+  width: 120px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none; /* Supprimez toute ombre si non nécessaire */
+}
+
+.skill-card img {
+  border-radius: 50%; /* Image ronde */
+  width: 100px; /* Augmenter la taille de l'image */
+  height: 100px; 
+  object-fit: cover;
+}
+
+.skill-card p {
+  font-size: 1.1rem; /* Augmenter légèrement la taille de la police */
+  color: #fff; /* Mettre le texte en blanc */
+  margin-top: 10px;
+  
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  /* box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); */
+}
+
+/* Stylisation des onglets */
+.nav-pills .nav-link {
+  border-radius: 20px;
+  padding: 12px 20px;
+  font-size: 1rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.tab-pane {
+  margin-top: 20px;
+}
+
+.nav-pills {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Section CV */
+#cv-download {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cv-download h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+#cv-download p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+#cv-download .btn {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#cv-download .btn:hover {
+  background-color: #0056b3;
+}
+
+#opening-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Prendre toute la hauteur de l'écran */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  z-index: 1000; /* S'assurer que la page d'ouverture soit au-dessus de tout le reste */
+  opacity: 1; /* Initialement visible */
+  visibility: visible; /* Pour garder l'élément visible avant l'animation */
+  transition: opacity 1s ease-out, visibility 0s linear 1s; /* Animation de fondu + visibilité */
+}
+
+#opening-page .logo img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#opening-page h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#opening-page p {
+  font-size: 1.2rem;
+}
